@@ -1,8 +1,8 @@
-\documentclass[handout]{beamer}
+\documentclass[aspectratio=169]{beamer}
 
 \title{Command Line Apps in Python}
 \author{David Fischer}
-\date{May 27, 2021}
+\date{March 23, 2023}
 
 %% Beamer Themes
 \usetheme{Berlin}
@@ -17,6 +17,7 @@
 \usepackage[font=scriptsize,labelformat=empty]{caption}
 
 
+\beamertemplatenavigationsymbolsempty
 \setbeamertemplate{footline}{
   \hspace*{.2cm}
   \scriptsize{
@@ -62,7 +63,7 @@
 \begin{frame}[fragile]
 \frametitle{Argparse}
 
-{\scriptsize
+{\tiny
 \begin{minted}{python}
 ## argparse_sample.py
 import argparse
@@ -97,7 +98,7 @@ argparse_sample.py 2.0
 \begin{frame}[fragile]
 \frametitle{Click}
 
-{\scriptsize
+{\tiny
 \begin{minted}{python}
 ## click_sample.py
 import click
@@ -133,7 +134,7 @@ click_sample.py v2.0
 \begin{frame}[fragile]
 \frametitle{Click (continued)}
 
-{\scriptsize
+{\tiny
 \begin{minted}{python}
 import click
 import os
@@ -167,7 +168,7 @@ class MyMulticommand(click.MultiCommand):
 \frametitle{Resources}
   \begin{itemize}
     \item {\small A longer version of this talk is at \href{https://www.davidfischer.name}{davidfischer.name}}
-    \item {\small Argparse tutorial: \href{https://docs.python.org/3.7/howto/argparse.html}{docs.python.org/3.7/howto/argparse.html}}
+    \item {\small Argparse tutorial: \href{https://docs.python.org/3/howto/argparse.html}{docs.python.org/3/howto/argparse.html}}
     \item {\small Click's documentation: \href{https://click.palletsprojects.com/}{click.palletsprojects.com}}
   \end{itemize}
 \end{frame}
